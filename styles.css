@@ -8,5 +8,14 @@ body {
  font-family:"Times New Roman", Times, serif;
  }
 .about {
-    background: #d8d1ca;
+    background: #ffffff;
+ }
+ .skills {
+    background: #ee0505;
+ }
+ .projects {
+    background: #956638;
+ }
+ .contact {
+    background: #c40c0c;
  }
