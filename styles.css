@@ -1,21 +1,26 @@
 body {
- background: #ccb93e;
- font-family:"Times New Roman", Times, serif;
- }
- h1 {
- color: [black];
- text-align: center;
- font-family:"Times New Roman", Times, serif;
- }
+  background: #ccb93e;
+  font-family:"Times New Roman", Times, serif;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family:"Times New Roman", Times, serif;
+}
+
 .about {
-    background: #ffffff;
- }
+  background: #ffffff;
+}
+
 .skills {
-    background: #ee0505;
- }
+  background: #ee0505;
+}
+
 .projects {
-    background: #956638;
- }
+  background: #956638;
+}
+
 .contact {
-    background: #c40c0c;
- }
+  background: #c40c0c;
+}
