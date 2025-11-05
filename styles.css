@@ -1,60 +1,94 @@
-/* Reset some default spacing */
+/* Reset & base */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111111;       /* deep dark background */
+  background-image: url('images/texture-dark.jpg'); /* optional subtle texture */
+  background-size: cover;
+  color: #dddddd;
   margin: 40px;
-  background-color: #000000;
-  color: #222;
   text-align: center;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #003366;
+  font-family: 'Orbitron', sans-serif;  /* futuristic / tech font */
+  font-size: 3em;
+  color: #ff6600;                       /* bold accent orange */
   margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(255,102,0,0.6);
 }
 
 h2 {
-  color: #0055aa;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff3300;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 4px rgba(255,51,0,0.4);
 }
 
+/* Containers / Cards */
 .about, .skills, .projects, .contact {
-  background: rgb(0, 0, 0);
+  background: #1c1c1c;
   padding: 20px;
   margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
   max-width: 800px;
+  border: 2px solid #333333;
 }
 
-/* Center and scale all images */
+/* Images styling */
 img {
   display: block;
-  margin: 30px auto;
-  width: 500px;    /* smaller, consistent image size */
+  margin: 15px auto;
+  width: 250px;        /* adjust if you want smaller/larger */
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 0 16px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255,102,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,102,0,0.8);
 }
 
-/* Links and hover styling */
+/* Links & Buttons */
 a {
   text-decoration: none;
-  color: #0066cc;
+  color: #ff6600;
   font-weight: bold;
+  transition: color 0.2s;
 }
-
 a:hover {
-  color: #004488;
+  color: #ff9933;
   text-decoration: underline;
 }
 
-/* Section styling for projects */
-.project {
-  margin-top: 30px;
-}
-
+/* Paragraphs */
 p {
   line-height: 1.6;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+  color: #cccccc;
+}
+
+/* Project section */
+.project {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* Footer / Contact section tweak */
+.contact {
+  margin-bottom: 40px;
+}
+
+/* Optional: responsive tweaks */
+@media (max-width: 600px) {
+  img {
+    width: 80%;
+  }
+  body {
+    margin: 20px;
+  }
 }
