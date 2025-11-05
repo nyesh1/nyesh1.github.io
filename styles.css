@@ -1,35 +1,60 @@
+/* Reset some default spacing */
 body {
-  background: #fffffe;
-  font-family:"Times New Roman", Times, serif;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+  color: #222;
+  text-align: center;
 }
 
 h1 {
-  color: black;
-  text-align: center;
-  font-family:"Times New Roman", Times, serif;
+  font-size: 2.5em;
+  color: #003366;
+  margin-bottom: 20px;
 }
 
-.about {
-  background: #ffffff;
+h2 {
+  color: #0055aa;
 }
 
-.skills {
-  background: #4e4b35;
-}
-
-.projects {
-  background: #956638;
-}
-
-.contact {
-  background: #231609;
-}
-
-.projects{display:flex; flex-wrap: wrap;}
-.project{
-  width: 30%;
-  margin: 10px;
-  padding:20px 10px;
+.about, .skills, .projects, .contact {
   background: white;
-  border-radius: 25%;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+}
+
+/* Center and scale all images */
+img {
+  display: block;
+  margin: 15px auto;
+  width: 250px;    /* smaller, consistent image size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* Links and hover styling */
+a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #004488;
+  text-decoration: underline;
+}
+
+/* Section styling for projects */
+.project {
+  margin-top: 30px;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
 }
