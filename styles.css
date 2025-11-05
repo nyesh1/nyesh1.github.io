@@ -29,11 +29,11 @@ h2 {
 /* Center and scale all images */
 img {
   display: block;
-  margin: 15px auto;
-  width: 250px;    /* smaller, consistent image size */
+  margin: 30px auto;
+  width: 500px;    /* smaller, consistent image size */
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.15);
 }
 
 /* Links and hover styling */
