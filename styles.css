@@ -78,8 +78,11 @@ p {
   padding-top: 20px;
 }
 
-/* Footer / Contact section tweak */
 .contact {
+  margin-bottom: 40px;
+}
+
+.resume {
   margin-bottom: 40px;
 }
 
@@ -91,18 +94,4 @@ p {
   body {
     margin: 20px;
   }
-}
-.sheet{
-  background:#fff;
-  width:100%;
-  max-width: var(--maxw);
-  padding:34px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.08);
-  border-radius:6px;
-  box-sizing:border-box;
-
-  /* THIS is the fix */
-  min-height: 100vh;        /* sheet fills full screen height */
-  display: flex;
-  flex-direction: column;
 }
