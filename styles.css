@@ -1,97 +1,128 @@
-/* Reset & base */
+/* ===== RESET & BASE ===== */
+/* Used A.I. for a final "clean up" of my css file*/
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #111111;       /* deep dark background */
-  background-image: url('images/texture-dark.jpg'); /* optional subtle texture */
+  background-color: #0d0d0d;
+  background-image: url("images/Background.jpg");
   background-size: cover;
-  color: #dddddd;
-  margin: 40px;
+  background-attachment: fixed;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 40px 20px;
   text-align: center;
 }
 
+/* ===== HEADERS ===== */
 h1 {
-  font-family: 'Orbitron', sans-serif;  /* futuristic / tech font */
-  font-size: 3em;
-  color: #ff6600;                       /* bold accent orange */
-  margin-bottom: 20px;
-  text-shadow: 0 2px 8px rgba(255,102,0,0.6);
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.2em;
+  color: #ff6600;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 10px rgba(255, 102, 0, 0.7);
 }
 
 h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8em;
   color: #ff3300;
   margin-top: 30px;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 4px rgba(255, 51, 0, 0.4);
+}
+
+h3 {
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 8px;
   margin-bottom: 10px;
-  text-shadow: 0 1px 4px rgba(255,51,0,0.4);
+  color: #ff8833;
 }
 
-/* Containers / Cards */
-.about, .skills, .projects, .contact {
-  background: #1c1c1c;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  max-width: 800px;
-  border: 2px solid #333333;
+/* ===== CARD SECTIONS ===== */
+.about,
+.skills,
+.projects,
+.contact,
+.resume {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 10px;
+  max-width: 850px;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
 }
 
-/* Images styling */
-img {
-  display: block;
-  margin: 15px auto;
-  width: 250px;        /* adjust if you want smaller/larger */
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(255,102,0,0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255,102,0,0.8);
+/* ===== TEXT ===== */
+p {
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 22px;
+  color: #d0d0d0;
+  font-size: 1.05em;
 }
 
-/* Links & Buttons */
+/* ===== LINKS ===== */
 a {
   text-decoration: none;
   color: #ff6600;
   font-weight: bold;
-  transition: color 0.2s;
+  transition: 0.25s ease;
 }
+
 a:hover {
-  color: #ff9933;
-  text-decoration: underline;
+  color: #ff9944;
+  text-shadow: 0 0 6px rgba(255, 153, 68, 0.7);
 }
 
-/* Paragraphs */
-p {
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  color: #cccccc;
+/* ===== IMAGES ===== */
+img {
+  display: block;
+  margin: 18px auto;
+  width: 260px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.5);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* Project section */
+img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.9);
+}
+
+/* ===== PROJECT SECTION ===== */
 .project {
   margin-top: 40px;
+  padding-top: 30px;
   border-top: 1px solid #333;
-  padding-top: 20px;
 }
 
-.contact {
-  margin-bottom: 40px;
+.project h2 {
+  margin-top: 40px;
 }
 
+/* ===== SPACING REFINEMENTS ===== */
+.contact,
 .resume {
   margin-bottom: 40px;
 }
 
-/* Optional: responsive tweaks */
-@media (max-width: 600px) {
-  img {
-    width: 80%;
-  }
+/* ===== RESPONSIVE ===== */
+@media (max-width: 650px) {
   body {
-    margin: 20px;
+    padding: 20px;
+  }
+
+  img {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 }
