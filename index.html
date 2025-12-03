@@ -1,105 +1,47 @@
-<!--Used A.I. for a final "clean up" of my main html file-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSE 190: Noah Yesh</title>
+
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Recommended default styling improvements -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    h1 {
-      text-align: center;
-      padding: 40px 0 10px;
-      font-size: 3rem;
-      color: #333;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .section {
-      background: #fff;
-      margin: 20px auto;
-      padding: 30px;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
-    }
-
-    .project img {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 15px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.15);
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .resume a h3,
-    .projects a h3 {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-    .subheader {
-      margin-top: 25px;
-      font-size: 1.5rem;
-      color: #333;
-    }
-  </style>
 </head>
 
 <body>
+
+  <div class="fog"></div>
+
   <h1>Noah Yesh</h1>
 
-  <!-- ABOUT -->
   <div class="section about">
     <h2>About Me</h2>
-    <p>My aim is to protect computerized assets and informational infrastructure through in-depth
-    knowledge of security fundamentals, forward defense approaches, and dynamic adjustment to
-    emerging threats.</p>
+    <p>
+      My aim is to protect computerized assets and informational infrastructure through
+      in-depth knowledge of security fundamentals, forward defense approaches, and
+      dynamic adjustment to emerging threats.
+    </p>
   </div>
 
-  <!-- SKILLS -->
   <div class="section skills">
     <h2>Skills</h2>
     <p>(Add your skills here—bullets, icons, categories, etc.)</p>
   </div>
 
-  <!-- PROJECTS -->
   <div class="section projects">
     <h2>Highlighted Projects</h2>
 
-    <section class="project">
+    <section class="project card-hover">
       <div class="subheader">Problem Statement</div>
       <a href="files/Rust.pdf"><h3>Problem Statement (PDF)</h3></a>
       <a href="files/Rust.pdf">
         <img src="images/rusts.jpg" alt="Rust Project Thumbnail">
       </a>
       <p>
-        New and casual players of the video game <strong>Rust</strong> need a manageable environment to learn core
-        survival and resource mechanics because the relentless dominance and immediate eradication by
-        veteran players prevents meaningful participation and leads to player frustration and dropout.
+        New and casual players of the video game <strong>Rust</strong> need a manageable
+        environment to learn core survival and resource mechanics because the relentless
+        dominance and immediate eradication by veteran players prevents meaningful
+        participation and leads to player frustration and dropout.
       </p>
 
       <div class="subheader">Affinity Diagram</div>
@@ -122,23 +64,16 @@
     </section>
   </div>
 
-  <!-- CONTACT -->
   <div class="section contact">
     <h2>Contact Me</h2>
     <p>(Add your email, GitHub, LinkedIn, etc.)</p>
   </div>
 
-  <!-- RESUME -->
   <div class="section resume">
     <h2>My Resume</h2>
 
-    <a href="files/Resume.pdf">
-      <h3>View Resume (Initial PDF)</h3>
-    </a>
-
-    <a href="resume.html">
-      <h3>View Resume (Updated HTML)</h3>
-    </a>
+    <a href="files/Resume.pdf"><h3>View Resume (Initial PDF)</h3></a>
+    <a href="resume.html"><h3>View Resume (Updated HTML)</h3></a>
   </div>
 
 </body>
