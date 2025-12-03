@@ -2,16 +2,16 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  /* Background fix */
+ 
   background-color: #111111;
-  background-image: url("images/Background.jpg"); /* fixed path */
+  background-image: url("./images/Background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   color: #dddddd;
-  margin: 0;              /* FIXED: previously caused white edges */
-  padding: 40px;          /* replaces margin so background covers entire screen */
+  margin: 0;              
+  padding: 40px;          
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ h2 {
 
 /* Containers / Cards */
 .about, .skills, .projects, .contact, .resume {
-  background: rgba(28, 28, 28, 0.95); /* slightly transparent so BG shows */
+  background: rgba(28, 28, 28, 0.95); 
   padding: 20px;
   margin: 20px auto;
   border-radius: 8px;
