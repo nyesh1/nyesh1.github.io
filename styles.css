@@ -1,107 +1,202 @@
 /* Used A.I. for a final "clean up" of my css file*/
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600&display=swap');
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
- 
-  background-color: #111111;
-  background-image: url("./images/Background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
-  color: #dddddd;
-  margin: 0;              
-  padding: 40px;          
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #1b2838;
+  color: #c7d5e0;
+  line-height: 1.6;
+  animation: bgFade 1.4s ease forwards;
+  opacity: 0;
 }
 
-/* Headings */
+@keyframes bgFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3em;
-  color: #ff6600;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 8px rgba(255,102,0,0.6);
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0,0,0,0.6);
+  animation: fadeDrop 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeDrop {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 h2 {
-  font-family: 'Courier New', Courier, monospace;
-  color: #ff3300;
-  margin-top: 30px;
   margin-bottom: 10px;
-  text-shadow: 0 1px 4px rgba(255,51,0,0.4);
+  font-weight: 400;
+  color: #ffffff;
 }
 
-/* Containers / Cards */
-.about, .skills, .projects, .contact, .resume {
-  background: rgba(28, 28, 28, 0.95); 
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  max-width: 800px;
-  border: 2px solid #333333;
+h3 {
+  color: #66c0f4;
+  font-weight: 400;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
-/* Images */
-img {
-  display: block;
-  margin: 15px auto;
-  width: 250px;
-  height: auto;
+h3:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(102,192,244,0.9);
+}
+
+.section {
+  background: rgba(48, 62, 81, 0.85);
+  margin: 25px auto;
+  padding: 30px;
+  max-width: 900px;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgba(255,102,0,0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(4px);
+  animation: fadeRise 0.7s ease forwards;
+  opacity: 0;
 }
 
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255,102,0,0.8);
+@keyframes fadeRise {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Links */
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+
+.section:hover {
+  box-shadow: 0 0 35px rgba(0,0,0,0.55);
+  transform: scale(1.01);
+  transition: 0.25s ease;
+}
+
 a {
+  color: #66c0f4;
   text-decoration: none;
-  color: #ff6600;
-  font-weight: bold;
-  transition: color 0.2s;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
 a:hover {
-  color: #ff9933;
-  text-decoration: underline;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(102,192,244,0.8);
 }
 
-/* Paragraphs */
-p {
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  color: #cccccc;
+.subheader {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  animation: fadeRise 0.7s ease forwards;
 }
 
-/* Project section */
-.project {
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
+.project img {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: fadeRise 0.8s ease forwards;
+  opacity: 0;
 }
 
-/* Extra spacing for bottom sections */
-.contact {
-  margin-bottom: 40px;
+.project img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(102,192,244,0.4);
 }
 
-.resume {
-  margin-bottom: 40px;
+@keyframes softPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+  100% { transform: scale(1); }
 }
 
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  img {
-    width: 80%;
-  }
-  body {
-    padding: 20px;
-  }
+button {
+  background: linear-gradient(90deg, #1a9fff, #66c0f4);
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(102,192,244,0.9);
+  animation: softPulse 0.5s ease;
+}
+
+.navbar {
+  width: 100%;
+  background: #171a21;
+  padding: 18px 30px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  opacity: 0;
+  animation: fadeDown 0.9s ease forwards;
+}
+
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.navbar a {
+  color: #c7d5e0;
+  transition: 0.25s ease;
+}
+
+.navbar a:hover {
+  color: #66c0f4;
+  text-shadow: 0 0 10px rgba(102,192,244,0.8);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(102,192,244,0.35);
+}
+
+.fog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.04), transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(255,255,255,0.04), transparent 55%);
+  pointer-events: none;
+  animation: fogMove 22s linear infinite;
+}
+
+@keyframes fogMove {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(-200px,-200px); }
+}
+
+.section p {
+  color: #c7d5e0;
+  font-size: 1rem;
 }
